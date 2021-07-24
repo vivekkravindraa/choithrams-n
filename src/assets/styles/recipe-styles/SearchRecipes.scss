@@ -1,0 +1,57 @@
+.searchRecipes {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & > input {
+        width: 200px;
+        border: none;
+        outline: 0;
+        background: #ffffff;
+        padding: 20px 20px 20px 35px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    & > input::placeholder {
+        font-weight: 600;
+        font-size: 10px;
+        font-family: "ApercuRegular", sans-serif;
+        color: #808080;
+        opacity: 1;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    & > button {
+        width: 100px;
+        border: none;
+        outline: 0;
+        color: #ffffff;
+        background-color: #00b712;
+        background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        padding: 20px;
+        border-radius: 0 25px 25px 0;
+        font-weight: 600;
+        font-size: 10px;
+        font-family: "ApercuRegular", sans-serif;
+        color: #ffffff;
+        opacity: 1;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    & > img {
+        position: absolute;
+        left: 20px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .searchRecipes {
+        & > input {
+            width: 100px;
+        }
+    }
+}

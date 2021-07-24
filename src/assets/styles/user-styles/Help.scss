@@ -1,0 +1,224 @@
+.userContentHelp{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: 40px;
+    column-gap: 25px;
+    .helpMainContainer{
+   
+        & > p{
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 1;
+            word-spacing: nowrap;
+            margin: 15px 1px ;
+        }
+    
+        & .helpContainer{
+            margin: 25px 10px;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255,255,255);
+            box-shadow: 1px 2px 2px 2px #dedede;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 2px rgb(173,173,173);
+            padding: 20px 30px;
+            justify-content: center;
+    
+            & .helpSection:first-child{
+                // border: 1px solid red;
+    
+                & .imageAndTitle{
+                    align-items: center;
+                    display : flex;
+                    padding: 15px;
+    
+                    & > img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 20px;
+                    }
+    
+                    & > p{
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        // margin: 15px;
+    
+                        
+                    }
+                }
+    
+                & > p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    padding: 10px;
+                    color: rgb(117,117,117);
+                    line-height: 1.5;
+    
+                    & > span{
+                        display : none;
+                    }
+                }
+    
+                & .linkAndArrow{
+                    align-items: center;
+                    // text-align: center;
+                    display : flex;
+                    padding: 10px;
+    
+                    & > p{
+                        font-size: 13px;
+                        font-weight: 600;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        margin: 0;
+                        color: rgb(78,173,60);
+                    }
+    
+                    & > img{
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 15px;
+                    }
+    
+                }
+    
+                & .border{
+                    margin-top: 15px;
+                    border-bottom: 0.1px solid #d3d3d3;
+                }
+            }
+    
+            & .helpSection:nth-child(2){
+                // border: 1px solid red;
+    
+                & .imageAndTitle{
+                    align-items: center;
+                    display : flex;
+                    padding: 15px;
+    
+                    & > img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 20px;
+                    }
+    
+                    & > p{
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        // margin: 15px;
+    
+                    }
+                }
+    
+                & > p{
+                   display : none;
+                }
+    
+                & .linkAndArrow{
+                    align-items: center;
+                    // text-align: center;
+                    display : flex;
+                    padding: 10px;
+    
+                    & > p{
+                        font-size: 13px;
+                        font-weight: 600;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        margin: 0;
+                        color: rgb(78,173,60);
+                    }
+    
+                    & > img{
+                        width: 15px;
+                        height: 15px;
+                        margin-left: 15px;
+                    }
+    
+                }
+    
+                & .border{
+                    margin-top: 15px;
+                    border-bottom: 0.1px solid #d3d3d3;
+                }
+            }
+    
+            & .helpSection:last-child{
+                // border: 1px solid red;
+    
+                & .imageAndTitle{
+                    align-items: center;
+                    display : flex;
+                    padding: 15px;
+    
+                    & > img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 20px;
+                    }
+    
+                    & > p{
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        // margin: 15px;
+                    }
+                }
+    
+                & > p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    padding: 10px;
+                    color: rgb(117,117,117);
+                    line-height: 1.5;
+    
+                    & > span{
+                        margin-left: 5px;
+                        color: rgb(78,173,60);
+                        font-weight: 600;
+                        line-height: 1.5;
+                    }
+                }
+    
+                & .linkAndArrow{
+                   display : none;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .userContentHelp{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+        & .helpMainContainer{
+            & > p{
+                margin: 10px 5px;
+            }
+
+            & .helpContainer{
+                // border: 1px solid red;
+                margin: 20px 5px;
+                padding: 5px 5px;
+            }
+        }
+
+       
+    }
+}

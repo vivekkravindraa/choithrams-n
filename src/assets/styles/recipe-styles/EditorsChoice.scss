@@ -1,0 +1,373 @@
+.editorsChoiceContainer {
+    background: #ffffff;
+    position: relative;
+
+    & .editorsChoiceHeader {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 80px;
+
+        & > div:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #d3d3d3;
+
+            & > div:first-child {
+                position: relative;
+                border-bottom: 2px solid #ffffff;
+
+                & > p:first-child {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+            }
+
+            & > div:first-child:hover {
+                position: relative;
+                border-bottom: 2px solid #000000;
+                bottom: -1px;
+            }
+
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+
+                & > p {
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 8px 0 0;
+                }
+
+                & > img {
+                    height: 10px;
+                }
+            }
+        }
+
+        & > div:last-child {
+            display: flex;
+            margin-top: 25px;
+            overflow-x: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            & > div {
+                border: 1px solid #808080;
+                margin-right: 8px;
+                padding: 4px;
+                border-radius: 2px;
+
+                & > p {
+                    white-space: nowrap;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+
+            }
+
+            & > div:hover {
+                background: #41983e;
+
+                & > p {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        & > div:last-child::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    & .editorsChoiceItems::-webkit-scrollbar {
+        display: none;
+    }    
+
+    & .editorsChoiceItems {
+        display: grid;
+        grid-template-columns: repeat(1000, 256px);
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        margin: 0 80px 40px 80px;
+        grid-gap: 25px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        & .recipe {
+            position: relative;
+            background: #ffffff;
+        
+            & > div:first-child {
+                position: relative;
+        
+                & > img:first-child {
+                    height: 180px;
+                    width: 100%;
+                }
+        
+                & .absoluteCalendar {
+                    position: absolute;
+                    top: 0;
+                    background: #F4D03F;
+                    left: 25px;
+                    width: 60px;
+                    height: 60px;
+        
+                    & > p:first-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 20px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #000000;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0;
+                        padding: 0 8px;
+                    }
+        
+                    & > p:last-child {
+                        text-align: left;
+                        font-weight: 600;
+                        font-size: 16px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #000000;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0;
+                        padding: 0 8px;
+                    }
+                }
+        
+                & > img:nth-child(3) {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    height: 24px;
+                }
+        
+                & > img:last-child {
+                    position: absolute;
+                    top: 45px;
+                    right: 10px;
+                    height: 24px;
+                }
+            }
+        
+            & > div:last-child {
+                position: relative;
+                padding: 10px 0;
+
+                & > p:first-child {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 10px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #ffa500;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 8px 0;
+                }
+        
+                & > p:nth-child(2) {
+                    padding: 0 10px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 16px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 8px 0;
+                }
+        
+                & > p:nth-child(3) {
+                    display: none;
+                    padding: 0 40px;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 8px 0;
+                }
+        
+                & > button:nth-child(4) {
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px auto;
+                    padding: 10px;
+                    outline: 0;
+                    border: #ffa500;
+                    background: #ffa500;
+                    color: #ffffff;
+                    border-radius: 22px;
+                }
+        
+                & > div:last-child {
+                    display: none;
+                    grid-template-columns: repeat(3, 4fr);
+                    padding: 10px;
+        
+                    & > div:first-child {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+        
+                        & > img {
+                            height: 16px;
+                        }
+                    }
+        
+                    & > div:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+        
+                        & > img {
+                            height: 16px;
+                            margin-right: 8px;
+                        }
+        
+                        & > p {
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #000000;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+        
+                    & > div:last-child {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+        
+                        & > img {
+                            height: 16px;
+                            margin-right: 8px;
+                        }
+        
+                        & > p {
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #000000;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            & > div:last-child:hover {
+                background: #f5f5f5;
+            }
+        }
+    }
+
+    & .editorsChoiceArrowLeft {
+        position: absolute;
+        left: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+
+    & .editorsChoiceArrowRight {
+        position: absolute;
+        right: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .editorsChoiceContainer {
+        & .editorsChoiceHeader {
+            padding: 10px;
+        }
+
+        & .editorsChoiceItems {
+            display: grid;
+            grid-template-columns: repeat(1000, 350px);
+            margin: 25px;
+        }
+
+        & .editorsChoiceArrowLeft {
+            left: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    
+        & .editorsChoiceArrowRight {
+            right: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .editorsChoiceContainer {
+        & .editorsChoiceHeader {
+            padding: 10px;
+        }
+
+        & .editorsChoiceItems {
+            display: grid;
+            grid-template-columns: repeat(1000, 350px);
+            margin: 10px;
+        }
+
+        & .editorsChoiceArrowLeft {
+            left: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    
+        & .editorsChoiceArrowRight {
+            right: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    }
+}

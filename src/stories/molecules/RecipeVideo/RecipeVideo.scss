@@ -1,0 +1,82 @@
+.choithrams-recipeVideo {
+    max-width: 260px;
+
+    & > div:first-child {
+        position: relative;
+
+        & > video:first-child {
+            width: 260px;
+            height: 180px;
+        }
+
+        & > img:nth-child(2) {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 24px;
+        }
+
+        & > img:nth-child(3) {
+            position: absolute;
+            top: 45px;
+            right: 10px;
+            height: 24px;
+        }
+
+        & > p:nth-child(4) {
+            position: absolute;
+            left: 4px;
+            bottom: 4px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        & > p:last-child {
+            position: absolute;
+            right: 4px;
+            bottom: 4px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+
+    & > div:last-child {
+        background: #f5f5f5;
+        padding: 15px 0;
+
+        & > p:first-child {
+            text-align: center;
+            font-weight: 600;
+            font-size: 10px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffa500;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0 0 8px 0;
+        }
+
+        & > p:last-child {
+            padding: 0 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #000000;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+}

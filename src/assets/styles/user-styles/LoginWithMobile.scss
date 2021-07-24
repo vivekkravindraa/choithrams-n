@@ -1,0 +1,557 @@
+@media (min-width: 1025px) and (max-width: 4000px){
+    .loginWithMobileMainContainer{
+        // border: 1px solid red;
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loginWithMobileContainer{
+            padding: 5px 0px;
+            width: 28%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+            
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+
+            & .continueButton{
+                margin-top: 50px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+
+                & > button{
+                    border-radius: 20px;
+                    padding: 10px 10px ;
+                    width: 90%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 13px;
+                }
+            }
+
+            & .cantSignin{
+                margin-top: 15px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & > a{
+                    text-decoration: none;
+                    & > p{
+                        font-size: 13px;
+                        font-weight: bold;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(117,117,117);
+                    }                    
+                }
+            }
+
+            & .borderSection{
+                // margin-top: 30px;
+                border-bottom: 1px solid black ;
+            }
+
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto,sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .loginWithMobileMainContainer{
+        // border: 1px solid red;
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .loginWithMobileContainer{
+            padding: 5px 0px;
+            width: 45%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;    
+        
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top:10px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+                    
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            & .continueButton{
+                margin-top: 30px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                & > button{
+                    border-radius: 20px;
+                    padding: 10px 10px ;
+                    width: 80%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        
+            & .cantSignin{
+                margin-top: 15px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & > a{
+                    text-decoration: none;
+                    & > p{
+                        font-size: 13px;
+                        font-weight: bold;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(117,117,117);        
+                    }
+                }
+            }
+
+            & .borderSection{
+                margin-top: 30px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+        
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+        
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto,sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);    
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+    // tablet responsiveness
+@media (max-width: 991px){
+    .loginWithMobileMainContainer{
+        // border: 1px solid red;
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .loginWithMobileContainer{
+            padding: 5px 0px;
+            width: 50%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;    
+        
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top:10px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+                    
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            & .continueButton{
+                margin-top: 30px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                & > button{
+                    border-radius: 20px;
+                    padding: 10px 10px ;
+                    width: 80%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        
+            & .cantSignin{
+                margin-top: 15px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & > a{
+                    text-decoration: none;
+                    & > p{
+                        font-size: 13px;
+                        font-weight: bold;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(117,117,117);        
+                    }
+                }
+            }
+
+            & .borderSection{
+                margin-top: 30px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+        
+        
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+        
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                }
+
+                & > a{
+                    text-decoration: none;
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto,sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);    
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+   
+
+// Mobile responsiveness
+@media (max-width: 767px){
+    .loginWithMobileMainContainer{
+        // border: 1px solid red;
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .loginWithMobileContainer{
+            padding: 5px 0px;
+            width: 90%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+                
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top:10px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+                        
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            & .continueButton{
+                margin-top: 30px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                & > button{
+                    border-radius: 20px;
+                    padding: 10px 10px ;
+                    width: 80%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        
+        
+            & .cantSignin{
+                margin-top: 15px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                & > a{
+                    text-decoration: none;
+                    & > p{
+                        font-size: 13px;
+                        font-weight: bold;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(117,117,117);        
+                    }
+
+                }
+            }
+
+            & .borderSection{
+                margin-top: 15px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+        
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+        
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto,sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);    
+                    }
+                }
+            }
+        }
+    }
+}
+

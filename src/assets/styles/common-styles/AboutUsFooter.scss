@@ -1,0 +1,280 @@
+/* all footer related scss styles goes in this file.. */
+.footerAboutUsContainer {
+    background: #41983e;
+    // margin: 350px 10px 0 10px;
+    // border-radius: 22px 22px 0 0;
+
+    & .footerBottom {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        margin: 0 80px;
+        padding: 0 0 50px 0;
+
+        & > div:first-child {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 10px 0;
+            }
+
+            & > p:first-child {
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        & > div:nth-child(2) {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 10px 0;
+            }
+
+            & > p:first-child {
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        & > div:nth-child(3) {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 10px 0;
+            }
+
+            & > p:first-child {
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        & > div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & > p:first-child {
+                font-weight: 600;
+                font-size: 14px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 8px 0;
+            }
+
+            & > div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                margin: 0 0 8px 0;
+                
+                & > img {
+                    height: 32px;
+                    margin-right: 8px;
+                }
+
+                & > div:last-child {
+                    display: flex;
+
+                    & > p:first-child {
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #ffffff;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0 8px 0 0;
+                    }
+    
+                    & > p:last-child {
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #ffffff;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                }
+            }
+
+            & > div:nth-child(3) {
+                display: flex;
+                align-items: center;
+                margin: 0 0 16px 0;
+
+                & > img {
+                    height: 32px;
+                    margin-right: 8px;
+                }
+
+                & > div:last-child {
+                    & > div:first-child {
+                        display: flex;
+
+                        & > p:first-child {
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #ffffff;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0 8px 0 0;
+                        }
+
+                        & > p:last-child {
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #ffffff;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+
+                    & > div:last-child {
+                        & > p {
+                            font-weight: 600;
+                            font-size: 10px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #ffffff;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            & > div:nth-child(4) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 16px 0;
+
+                & > div {
+                    & > img {
+                        height: 32px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+
+            & > div:nth-child(5) {
+                & > p {
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #ffffff;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+
+                & > div:nth-child(2) {
+                    display: grid;
+                    grid-template-columns: 1.5fr 1.5fr;
+                    place-items: center;
+                    margin: 0 0 8px 0;
+
+                    & > div:first-child {                        
+                        & > img {
+                            height: 32px;
+                            margin-right: 4px;
+                        }
+                    }
+
+                    & > div:last-child {                        
+                        & > img {
+                            height: 32px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #ffffff;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+
+            & > div:last-child {
+                display: flex;
+
+                & > input {
+                    width: -webkit-fill-available;
+                    border: none;
+                    outline: 0;
+                    padding: 10px;
+                    background: #41983e;
+                    border-bottom: 2px solid #90ee90;
+                }
+
+                & > input::placeholder {
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #ffffff;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+
+                & > button {
+                    border: none;
+                    outline: 0;
+                    white-space: nowrap;
+                    background: #90ee90;
+                    font-weight: 600;
+                    font-size: 10px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0; 
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .footerAboutUsContainer {
+        
+        & .footerBottom {
+            display: flex;
+            flex-direction: column;
+
+            & > div:first-child,
+            & > div:nth-child(2),
+            & > div:nth-child(3),
+            & > div:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+.cuisineContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    position: relative;
+
+    & .cuisineHeader {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 40px 0;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #d3d3d3;
+            position: relative;
+            top: -1px;
+
+            & > p {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #000000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+
+        & > div:hover::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 4%;
+            border-bottom: 2px solid #000000;
+        }
+    }
+
+    & .cuisineItems::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .cuisineItems {
+        display: grid;
+        grid-template-columns: repeat(1000, 256px);
+        grid-auto-flow: column;
+        grid-gap: 25px;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        & > div {
+            display: flex;
+            position: relative;
+
+            & > img {
+                border-radius: 4px;
+                height: 210px;
+                width: 100%;
+            }
+
+            & > p:first-of-type {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 25px;
+            }
+
+            & > p:nth-child(3) {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 50%;
+                text-align: left;
+                font-weight: 500;
+                font-size: 10px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 25px;
+            }
+
+            & > button:last-child {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border: none;
+                outline: 0;
+                background: #ffffff;
+                padding: 10px;
+                border-radius: 12px;
+                z-index: 1;
+                text-align: left;
+                font-weight: 500;
+                font-size: 10px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #000000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 25px;
+            }
+        }
+    }
+
+    & .cuisineArrowLeft {
+        position: absolute;
+        left: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+
+    & .cuisineArrowRight {
+        position: absolute;
+        right: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .cuisineContainer {
+        padding: 25px;
+        
+        & .cuisineItems {
+            grid-template-columns: repeat(1000, 180px);
+
+            & > div {
+                & > img {
+                    height: 150px;
+                    width: 100%;
+                }
+            }
+        }
+
+        & .cuisineArrowLeft {
+            left: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    
+        & .cuisineArrowRight {
+            right: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .cuisineContainer {
+        padding: 10px;
+        
+        & .cuisineItems {
+            grid-template-columns: repeat(1000, 160px);
+
+            & > div {
+                & > img {
+                    height: 140px;
+                    width: 100%;
+                }
+            }
+        }
+
+        & .cuisineArrowLeft {
+            left: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    
+        & .cuisineArrowRight {
+            right: 4px;
+    
+            & > img {
+                height: 32px;
+            }
+        }
+    }
+}

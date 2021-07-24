@@ -1,0 +1,201 @@
+.userContentAccount{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: 40px;
+    column-gap: 25px;
+
+    .paymentAccountMainContainer{
+        // padding-top: 20px;
+        // margin:10px;
+    
+        & > p{
+            font-size: 17px;
+            font-weight: 600;
+            opacity: 1;
+            word-spacing: nowrap;
+            margin: 15px 15px;
+        }
+    
+        & .paymentAccountContainer{
+            margin: 0px 15px;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255,255,255);
+            box-shadow: 1px 2px 2px 2px #dedede;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 2px rgb(173,173,173);
+            padding: 20px 30px;
+            justify-content: center;
+    
+            & .accounts:first-child{
+                & .logoAndLabel{
+                    display : flex;
+                    align-items: center;
+                    margin: 0;
+    
+                    & > img{
+                        width: 60px;
+                        height: 60px;  
+                        margin: 0;      
+                    }
+        
+                    & > p{
+                       display : none;
+                    }    
+                }
+    
+                & > p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: rgb(117,117,117);
+                    letter-spacing: 1px;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                }
+    
+                & .linkAndImage{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+    
+                    & > p{
+                        font-size: 14px;
+                        font-weight: 550;
+                        letter-spacing: none;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+    
+                    }
+    
+                    & > img{
+                        width : 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                    }
+                }
+    
+                & .borderSection{
+                    border-bottom: 1px solid  #d3d3d3;
+                }
+            }
+    
+            & .accounts:nth-child(2){
+                margin-top: 15px;
+    
+                & .logoAndLabel{
+                    display : flex;
+                    align-items: center;
+                    margin: 0;
+    
+                    & > img{
+                        width: 40px;
+                        height: 40px;
+                        margin: 0;      
+                    }
+        
+                    & > p{
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        margin-left: 15px;
+                    }    
+                }
+    
+                & > p{
+                   display : none;
+                }
+    
+                & .linkAndImage{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+    
+                    & > p{
+                        font-size: 14px;
+                        font-weight: 550;
+                        letter-spacing: none;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+    
+                    }
+    
+                    & > img{
+                        width : 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                    }
+                }
+                       
+                & .borderSection{
+                    border-bottom: 1px solid  #d3d3d3;
+                }
+            }
+    
+            & .accounts:nth-child(3){
+                margin: 15px 0;
+                // margin: 15px;
+    
+                & .logoAndLabel{
+                    display : flex;
+                    align-items: center;
+                    margin: 0;
+    
+                    & > img{
+                        width: 40px;
+                        height: 40px;  
+                        margin: 0;      
+                    }
+        
+                    & > p{
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        margin-left: 15px;
+                    }    
+                }
+    
+                & > p{
+                   display : none;
+                }
+    
+                & .linkAndImage{
+                   display : none;
+                }
+    
+                & .borderSection{
+                    border : none;
+                }
+            }
+    
+    
+           
+        } 
+    }
+
+}
+
+
+@media(max-width: 768px){
+    .userContentAccount{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+        .paymentAccountMainContainer{
+            & > p{
+                margin: 10px 5px;
+            }
+
+            & .paymentAccountContainer{
+                margin: 20px 5px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+/* all navigation related scss styles goes in this file.. */
+.navigationContainer {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    margin: 0 60px;
+    box-shadow:  0px 2px 8px #00243E1F;
+    background: #ffffff;
+
+    & .navigationItems {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #d3d3d3;
+        padding: 25px 0;
+        height: 500px;
+
+        & > div {
+            display: grid;
+            grid-template-columns: 1.7fr 0.3fr;
+            padding: 10px 35px;
+            width: -webkit-fill-available;
+
+            & > div:first-child {
+                & > p {
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+            }
+
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                & > img {
+                    height: 10px;
+                }
+            }
+        }
+
+        & > div:hover {
+            & > div:first-child {
+                & > p {
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    & .subNavigationItems {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+        padding: 25px 0;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+       
+        & > div {
+            padding: 10px;
+
+            & > p {
+                font-weight: 600;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #008000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 8px 0;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            & > div {
+                & > p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                    border-bottom: 2px solid #ffffff;
+                }
+
+                & > p:hover {
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    & .subNavigationItems::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .navigationImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+
+        & > p {
+            position: absolute;
+            left: -100px;
+            transform: rotate(270deg);
+            font-weight: 600;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #808080;
+            opacity: 1;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            height: 170px;
+            width: 170px;
+            box-shadow:  0px 2px 8px #00243E1F;
+            margin-bottom: 10px;
+
+            & > img {
+                height: 120px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .navigationContainer {
+        margin: 0 25px;
+    }
+}
+
+@media(max-width: 991px) {
+    .navigationContainer {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        margin: 0;
+        position: relative;
+        top: 156px;
+
+        & .subNavigationItems {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        & .navigationImages {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .navigationContainer {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        margin: 0;
+        position: relative;
+        top: 156px;
+
+        & .subNavigationItems {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        & .navigationImages {
+            display: none;
+        }
+    }
+}

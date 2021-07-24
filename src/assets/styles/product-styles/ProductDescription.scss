@@ -1,0 +1,1070 @@
+.productDescriptionContainer{
+    // border: 1px solid red;
+    background-color: rgb(225,230,237);
+
+    & .imageAndProductDetails{
+        display : grid;
+        grid-template-columns: repeat(2,6fr);
+        column-gap: 40px;
+        background-color: #ffffff;
+
+        & .leftSide{
+            align-items: center;
+            justify-content: center;
+
+            & > img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .productDescriptionContainer{
+            // border: 1px solid red;
+            padding: 20px 50px 20px 50px;
+            background-color: #ffffff;
+
+            & .productSiteIcons{
+                position: relative;
+                display : flex;
+                margin: 0;
+                padding: 0;
+
+                & > img{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 20px;
+                }
+                & > img:last-child{
+                    width: 30px;
+                    height: 30px;
+                    // text-align: right;
+                    // align-items: end;
+                    position: absolute;
+                    right: 80px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            & .productDescriptionSection{
+                // border: 1px solid green;
+                margin: 10px;
+                text-align: left;
+
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: bold;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(248,143,0);
+                    // margin: 0;
+                }
+                & > p:nth-child(2){
+                    font-size: 22px;
+                    font-weight: bold;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    line-height: 1.5;
+                    margin: 10px 0;
+                }
+                & > p:nth-child(3){
+                    font-size: 13px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                    letter-spacing: 1px;
+                }
+
+                & .borderSection{
+                    margin-top: 20px;
+                    border: 1px solid rgb(117,117,117);
+                    border-left: none;
+                    border-right: none;
+                    display : grid;
+                    grid-template-columns: repeat(4,3fr);
+                    padding: 10px 10px;
+
+                    & .deliveryItems{
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        justify-content: center;
+                        overflow: hidden;
+                        border-right: 1px solid rgb(117,117,117);
+
+                        & > img{
+                            width: 40px;
+                            height: 40px;
+                            margin: 0;
+                        }
+
+                        & > p{
+                            font-size: 13px;
+                            font-weight: 500;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    & .deliveryItems:last-child{
+                        border-right: none;
+                    }
+                }
+
+                & .ingredientSection{
+
+                    & > p{
+                        font-size: 17px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+
+                    }
+                    // margin: 10px;
+                    & .ingredients{
+                        display : grid;
+                        grid-template-columns: 0.2fr 1.75fr 2.5fr 1.6fr;
+                        align-items: center;
+                        margin: 0;
+
+                        & > img{
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 10px;
+                        }
+
+                        & > p:nth-child(2){
+                            font-size: 13px;
+                            font-weight: 500;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                            margin: 7px;
+                        }
+
+                        & > p:nth-child(3){
+                                                        
+                        }
+
+                        & > p:nth-child(4){
+                            font-size: 13px;
+                            font-weight: 500;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                            margin: 7px;
+                        }
+                    }
+                }
+
+                & > button{
+                    border-radius: 50px;
+                    padding: 8px 30px;
+                    color: #ffffff;
+                    background-color: rgb(78,173,60);
+                    border: 1px solid rgb(78,173,60);
+                    font-size: 15px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin-top: 30px;     
+                }
+            }
+        }
+    }
+
+    & .nutritionsSection{
+        padding: 40px 60px;
+
+        & .nutritionsHeader{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 10px 0;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #d3d3d3;
+                position: relative;
+                top: -1px;
+    
+                & > p:first-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+    
+                & > p:last-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+    
+            & > div:hover::after {
+                display: block;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 4%;
+                border-bottom: 2px solid #000000;
+            }
+        }
+
+        & .nutritionDetailsSection{
+            margin: 40px;
+            // border: 1px solid blue;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+
+            & .nutritionDetailSec:first-child{
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-image: linear-gradient( to bottom, white,white,rgb(248,143,0), rgb(248,143,0));
+                background-color: rgb(245,245,245);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+                
+                & > p:first-child{
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;
+                    margin-top: 53px;
+                }
+
+                & > p:nth-child(2){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                }
+
+                & > :nth-child(3){
+                    display: none;
+                }
+                & > :nth-child(4){
+                    display: none;
+                }
+            }
+
+            & .nutritionDetailSec:nth-child(2){
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-color: rgb(248,143,0);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+
+                & > p:first-child{
+                    display: none;
+                }
+
+                & > p:nth-child(2){
+                    display: none;
+                }
+
+                & > p:nth-child(3){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                    margin-top: 53px;                   
+                }
+
+                & > p:nth-child(4){
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;                   
+                }
+            }
+
+            & .nutritionDetailSec:nth-child(3){
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-image: linear-gradient( to bottom, white,white,rgb(248,143,0), rgb(248,143,0));
+                background-color: rgb(245,245,245);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+
+                
+                & > p:first-child{
+                    display: none;
+                }
+
+                & > p:nth-child(2){
+                    display: none;
+                }
+
+                & > p:nth-child(3){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                    margin-top: 53px;                   
+                }
+
+                & > p:nth-child(4){
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;                   
+                }
+            }
+
+            & .nutritionDetailSec:nth-child(4){
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-color: rgb(248,143,0);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+
+                & > p:first-child{
+                    display: none;
+                }
+
+                & > p:nth-child(2){
+                    display: none;
+                }
+
+                & > p:nth-child(3){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                    margin-top: 53px;                   
+                }
+
+                & > p:nth-child(4){
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;                   
+                }
+            }
+
+            & .nutritionDetailSec:nth-child(5){
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-image: linear-gradient( to bottom, white,white,white, rgb(248,143,0));
+                background-color: rgb(245,245,245);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+
+                & > p:first-child{
+                    display: none;
+                }
+
+                & > p:nth-child(2){
+                    display: none;
+                }
+
+                & > p:nth-child(3){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                    margin-top: 53px;                   
+                }
+
+                & > p:nth-child(4){
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;                   
+                }
+            }
+
+            & .nutritionDetailSec:last-child{
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                // border: 1px solid red;  
+                background-color: rgb(245,245,245);
+                justify-content: center;
+                vertical-align: center;
+                text-align: center;
+                align-items: center;
+
+                & > p:first-child{
+                    display: none;
+                }
+
+                & > p:nth-child(2){
+                    display: none;
+                }
+
+                & > p:nth-child(3){
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                    letter-spacing: 1px;
+                    margin-top: 53px;                   
+                }
+
+                & > p:nth-child(4){
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000000;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 1.5px;                   
+                }
+            }
+        }
+    }
+
+    & .cookingDirectionsSection{
+        padding: 20px 60px;
+        // border: 1px solid red;
+
+        & .cookingHeader{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 10px 0;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #d3d3d3;
+                position: relative;
+                top: -1px;
+    
+                & > p:first-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+    
+                & > p:last-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+    
+            & > div:hover::after {
+                display: block;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 4%;
+                border-bottom: 2px solid #000000;
+            }
+        }
+
+
+       
+
+        & .directionDetailSection{
+            // border: 1px solid red;
+            margin-top: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 4fr 6fr;
+            column-gap: 50px;
+
+            & .directionLeft{
+                & > img{
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+
+            & .directionRight{
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: rgb(78,173,60);
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    // position: absolute;
+                    // top: 10%;
+                    line-height: 1.5;
+
+                }
+
+                & > p:nth-child(2){
+                    font-size: 13px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 2px;
+                    // position: absolute;
+                    // top: 20%;
+                    line-height: 1.5;
+                    
+                }
+
+                & > p:nth-child(3){
+                    margin-top: 20px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    // position: absolute;
+                    // top: 40%;
+                    line-height: 1.5;
+                }
+
+                & > button{
+                    margin-top: 80px;
+                    border-radius: 50px;
+                    padding: 8px 30px;
+                    color: #ffffff;
+                    background-color: rgb(78,173,60);
+                    border: 1px solid rgb(78,173,60);
+                    font-size: 15px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    // position: absolute;
+                    // bottom: 15%;
+                }
+            }
+        }
+        
+        & .arrowAndView{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            margin: 10px;
+
+            & > img{
+                width : 18px;
+                height: 18px;
+                margin-right: 10px;
+            }
+
+            & > p{
+                font-size: 15px;
+                font-weight: 500;
+                color: rgb(78,173,60);
+                opacity: 1;
+                word-spacing: nowrap;
+                margin: 0;
+            }
+        }
+    }  
+    
+    & .toolsAndEquipmentsSection{
+        padding: 40px 60px;
+        // border: 1px solid red;
+
+        & .toolsHeader{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 10px 0;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #d3d3d3;
+                position: relative;
+                top: -1px;
+    
+                & > p:first-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+    
+                & > p:last-child {
+                    width: max-content;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+    
+            & > div:hover::after {
+                display: block;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 4%;
+                border-bottom: 2px solid #000000;
+            }
+        }
+       
+       & .toolsSection{
+           margin-top: 25px;
+           display: flex;
+
+           & .tools{
+               border: 1px solid rgb(117,117,117);
+               border-radius: 30px;
+               padding: 0 15px;
+               margin-right: 15px;
+
+               & > p{
+                   font-size: 13px;
+                   font-weight: 500;
+                   opacity: 1;
+                   word-spacing: nowrap;
+                }
+            }
+        }
+    }
+
+    & .ratingsSection{
+        // border: 1px solid red;
+        margin-top: 20px;
+        padding: 10px 60px;
+
+        & .ratingsAndTitle{
+            display : grid;
+            grid-template-columns: 4fr 2fr 2fr 4fr;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            border-bottom: 1px solid #d3d3d3;
+            position: relative;
+            padding-bottom: 10px;
+                // top: 10px;
+
+            & > p:first-child{
+                font-size: 18px;
+                font-weight: bold;
+                opacity: 1;
+                word-spacing: nowrap;
+                margin: 0;
+            }
+
+           & .ratings:nth-child(2){
+               display : flex;
+               align-items: center;
+               margin: 0;
+
+               & > img{
+                   width: 16px;
+                   height: 16px;
+                   margin-left: 10px;
+               }
+            }
+
+            & > p:nth-child(3){
+                font-size: 13px;
+                font-weight: 500;
+                opacity: 1;
+                word-spacing: nowrap;
+                margin: 0;
+
+            }
+            & > p:nth-child(4){
+                text-align: right;
+                font-size: 13px;
+                font-weight: 500;
+                opacity: 1;
+                word-spacing: nowrap;
+                margin: 0;
+            }
+        }
+
+        .ratingsAndTitle:hover::after{
+
+            display: block;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 4%;
+                border-bottom: 2px solid #000000;
+        }
+
+        & .commentsAndReviewsSection{
+            margin-top: 20px;
+            padding: 15px;
+
+            & .commentsSection{
+                display : grid;
+                grid-template-columns: 4fr 6fr 2fr;
+                column-gap: 10px;
+                margin-bottom: 40px;
+
+                & .firstSection{
+                    & .firstSectionGrid{
+                        display : grid;
+                        grid-template-columns: 3fr 3fr;
+                        column-gap: 10px;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+
+                        & .left{
+                            align-items: center;
+                            justify-content: center;
+                            margin:0;
+
+                            & > img{
+                                width: 85px;
+                                height: 85px;
+                            }
+
+                        }
+                        & .right{
+                            text-align: left;
+                            & > p:first-child{
+                                font-size: 15px;
+                                font-weight: bold;
+                                opacity: 1;
+                                word-spacing: nowrap;
+                                margin:0;
+                            }
+
+                            & > p{
+                                font-size: 13px;
+                                font-weight: 500;
+                                opacity: 1;
+                                word-spacing: nowrap;
+                                color: rgb(117,117,117);
+                                letter-spacing: 1px;
+                                margin-top: 6px;
+                            }
+
+                            & .ratingSec{
+                                display: flex;
+                                align-items: center;
+                               
+                                & > img{
+                                    width: 13px;
+                                    height: 13px;
+                                    margin-right: 7px;
+                                }                               
+                            }
+                        }
+                    }
+                }
+
+                & .secondSection{
+                    & > p{
+                        font-size: 13px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(117,117,117);
+                        letter-spacing: 1px;
+                    }
+
+                }
+
+                & .thirdSection{
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+
+                    & > img{
+                        width: 20px;
+                        height: 20px;                        
+                        border-right: 1px solid #000000;
+                        padding-right: 15px;                                              
+                    }
+
+                    & > img:last-child{
+                        border-right: none;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+
+        & .view{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            & > button{
+                border-radius: 50px;
+                padding: 6px 40px;
+                border: 1px solid #000000;
+                font-size: 15px;
+                font-weight: 500;
+                opacity: 1;
+                word-spacing: nowrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .productDescriptionContainer{
+        & .imageAndProductDetails{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            & .productDescriptionContainer{
+                padding: 20px 15px;
+            }
+        }
+
+        & .nutritionsSection{
+            padding: 20px 20px;
+
+            & .nutritionDetailsSection{
+                margin: 10px;
+                // border: 1px solid red;
+                text-align: center;
+
+                & .nutritionDetailSec:first-child{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:first-child{
+                        margin-top: 25px;
+                    }                    
+                }
+
+                & .nutritionDetailSec:nth-child(2){
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:nth-child(3){
+                        margin-top: 25px;
+                    }                    
+                }
+
+                & .nutritionDetailSec:nth-child(3){
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:nth-child(3){
+                        margin-top: 25px;
+                    }                    
+                }
+
+                & .nutritionDetailSec:nth-child(4){
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:nth-child(3){
+                        margin-top: 25px;
+                    }                    
+                }
+
+                & .nutritionDetailSec:nth-child(5){
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:nth-child(3){
+                        margin-top: 25px;
+                    }                    
+                }
+
+                & .nutritionDetailSec:last-child{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+
+                    & > p:nth-child(3){
+                        margin-top: 25px;
+                    }                    
+                }
+            }
+        }
+
+        & .cookingDirectionsSection{
+            padding: 20px 15px;
+
+            & .directionDetailSection{
+                & .directionRight{
+                    & > button{
+                        bottom: 8%;
+                    }
+                }
+            }
+        }
+
+        & .toolsAndEquipmentsSection{
+            padding: 20px 15px;
+
+            & .toolsSection{
+                display: grid;
+                grid-template-columns: repeat(4,3fr);
+                text-align: center;
+                row-gap: 15px;
+            }
+        }
+
+        & .ratingsSection{
+            padding: 20px 15px;
+
+            & .ratingsAndTitle{
+                & > p:nth-child(3){
+                    // border: 1px solid red;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+
+            & .commentsAndReviewsSection{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .productDescriptionContainer{
+        & .nutritionsSection{
+            & .nutritionDetailsSection{
+                display: grid;
+                grid-template-columns: repeat(2, 6fr);
+                row-gap: 10px;
+                justify-content: center;
+            }
+        }
+
+        & .cookingDirectionsSection{
+           & .directionDetailSection{
+               display: flex;
+               flex-direction: column;
+               row-gap: 20px;
+               padding: 5px;
+
+               & .directionRight{
+                   & > button{
+                       margin-top: 20px;
+                   }
+               }
+           }
+        }
+
+        & .toolsAndEquipmentsSection{
+            & .toolsSection{
+                grid-template-columns: repeat(2,6fr);
+            }
+        }
+
+        & .ratingsSection{
+            & .ratingsAndTitle{
+                grid-template-columns: 6fr 6fr;
+                row-gap: 10px;
+                justify-content: center;
+                text-align: center;
+
+                & > p:nth-child(4){
+                    text-align: center;
+                }
+
+                & .ratings:nth-child(2){
+                    justify-content: center;
+                }
+            }
+
+            & .commentsAndReviewsSection{
+                & .commentsSection{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/* all slider related scss styles goes in this file.. */
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel .control-dots .dot {
+    background: #292c0f !important;
+}
+
+.sliderContainer {
+    position: relative;
+
+    & .sliderSearchbox {
+        display: grid;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -165px;
+        top: 50%;
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sliderContainer {
+        position: relative;
+    
+        & .sliderSearchbox {
+            display: grid;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -175px;
+            top: 50%;
+            margin-top: -25px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .sliderContainer {
+        position: relative;
+    
+        & .sliderSearchbox {
+            display: grid;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -125px;
+            top: 50%;
+            margin-top: -25px;
+        }
+    }
+}

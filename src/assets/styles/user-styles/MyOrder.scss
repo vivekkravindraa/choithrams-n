@@ -1,0 +1,689 @@
+
+.userContentMyOrder{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: 40px;
+    column-gap: 25px;
+
+    .myOrderMainContainer{
+
+        & > p{
+            font-size: 17px;
+            font-weight: 600;
+            opacity: 1;
+            word-spacing: nowrap;
+            margin: 20px 20px;
+        }
+    
+        & .myOrderContainer{
+            // border: 1px solid red;
+            margin: 5px 10px;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255,255,255);
+            // box-shadow: 1px 2px 2px 2px #dedede;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 2px rgb(173,173,173);
+            padding: 20px 10px;
+            // justify-content: center;
+    
+            & .orderIdSection{
+                display: grid;
+                grid-template-columns: 1fr 9fr 3fr;
+                padding: 20px;
+    
+                & > img{
+                    width: 30px;
+                    height: 30px;
+                }
+    
+                & .dateAndTimeSection{
+                    & > p:first-child{
+                        margin: 0;
+                        font-size: 15px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                    }
+                    & > p:last-child{
+                        margin-top: 10px;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: rgb(117,117,117);
+                        letter-spacing: 1px;
+                    }
+                }
+    
+                & > p{
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: bold;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    text-align: right;
+                }
+            }
+    
+            & .myOrdersSection{
+                display : grid;
+                grid-template-columns: repeat(3,4fr);
+                padding: 50px;          
+                row-gap: 15px;
+                column-gap: 30px;
+    
+                & .imageAndProduct{
+                    display: grid;
+                    grid-template-columns: 2fr 4fr;
+                    align-items: center;
+                    padding: 5px;
+                    border: 1px solid rgb(247,247,247);
+                    border-radius: 5px;
+                    background-color:  rgb(247,247,247);
+    
+                    & .left{
+                        // justify-content: center;
+                        text-align: center;
+    
+                        & > img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+    
+                    & .right{
+                        // align-items: center;
+                        // margin: 0;
+                        & > p{
+                             margin: 0;
+                             word-spacing: nowrap;
+                             font-size: 14px;
+                             font-weight: bold;
+                             color: #000000;
+    
+                        }
+    
+                        & .quantityAndDetails{
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            margin-top: 20px;
+    
+                            & > p:first-child{
+                                margin: 0;
+                                word-spacing: nowrap;
+                                font-size: 13px;
+                                font-weight: bold;
+                                color: #000000;
+                            }
+    
+                            & > img{
+                                width: 13px;
+                                height: 13px;
+                                margin-left: 5px;
+                            }
+    
+                            & > p:nth-child(3){
+                                position: absolute;
+                                right: 10px;
+                                margin: 0;
+                                word-spacing: nowrap;
+                                font-size: 13px;
+                                font-weight: bold;
+                                color: #000000;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+    
+            & .viewItems{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 20px;
+    
+                & > img{
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 10px;
+                }
+    
+                & > p{
+                    margin: 0;
+                    word-spacing: nowrap;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: rgb(78,173,60);
+                    letter-spacing: 2px;
+                }
+            }
+    
+            & .myOrdersEmail{
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                margin: 30px;
+                padding: 20px;
+    
+                & > img{
+                    width: 22px;
+                    height: 22px;
+                }
+    
+                & .emailSec{
+                    & > p:first-child{
+                        margin: 0;
+                        word-spacing: nowrap;
+                        font-size: 16px;
+                        font-weight: bold;
+                        opacity: 1;
+                    }
+                    & > p:nth-child(2){
+                        margin-top: 10px;
+                        word-spacing: nowrap;
+                        font-size: 13px;
+                        font-weight: 500;
+                        opacity: 1;
+                        color: rgb(117,117,117);
+                        letter-spacing: 1px;
+                    }
+    
+                    & > div{
+                        display: flex;
+                        align-items: center;
+    
+                        & > p{
+                            margin: 0;
+                            word-spacing: nowrap;
+                            font-size: 16px;
+                            font-weight: bold;
+                            opacity: 1;
+                            color: rgb(249,164,48);
+                        }
+    
+                        & > img{
+                            width: 18px;
+                            height: 18px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+    
+            & .myOrderAddress{
+                display: grid;
+                grid-template-columns: 1fr 11fr;
+                margin: 30px;
+                padding: 20px;
+    
+                & > img{
+                    width: 25px;
+                    height: 25px;
+                }
+    
+                & .locationSec{
+                    & > p:first-child{
+                        margin: 0;
+                        word-spacing: nowrap;
+                        font-size: 16px;
+                        font-weight: bold;
+                        opacity: 1;
+                    }
+                    & > p:nth-child(2){
+                        margin-top: 10px;
+                        word-spacing: nowrap;
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        line-height: 1.5;
+                    }
+                }
+            }
+    
+            & .paymentModeSec{
+                margin: 30px;
+                padding: 20px;
+                background-color: rgb(207,239,207);
+    
+                & .paymentModeOnline{
+                    display: grid;
+                    grid-template-columns: 1fr 11fr;
+                    align-items: center;
+                    // margin: 30px;
+                    position: relative;
+    
+                    & > img{
+                        width: 35px;
+                        height: 35px;
+    
+                    }
+    
+                    & > p{
+                        // margin:0;
+                        margin-top: 10px;
+                        word-spacing: nowrap;
+                        font-size: 15px;
+                        font-weight: bold;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+    
+                    }
+    
+                    & > p:last-child{
+                        // margin: 0;
+                        position: absolute;
+                        right: 20px;
+    
+                    }
+                }
+    
+                & .totalSec{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-left: 100px;
+    
+                    & > p:first-child{
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+    
+                    & > p:last-child{
+                        position: absolute;
+                        right: 20px;
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                }
+    
+                & .productDiscountSec{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-left: 100px;
+                    margin-top: 10px;
+    
+                    & > p:first-child{
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                        
+                    }
+    
+                    & > p:last-child{
+                        position: absolute;
+                        right: 20px;
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                }
+    
+                & .deliveryChargesSec{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-left: 100px;
+                    margin-top: 10px;
+    
+                    & > p:first-child{
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+    
+                    & > p:last-child{
+                        position: absolute;
+                        right: 20px;
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+    
+                }
+    
+                & .otherChargesSec{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-left: 100px;
+                    margin-top: 10px;
+    
+                    & > p:first-child{
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+    
+                    & > p:last-child{
+                        position: absolute;
+                        right: 20px;
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                }
+    
+                & .totalPayableSec{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    margin-left: 100px;
+                    margin-top: 20px;
+    
+                    & > p:first-child{
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 15px;
+                        color: #000000;
+                        font-weight: bold;
+                    }
+    
+                    & > p:last-child{
+                        position: absolute;
+                        right: 20px;
+                        margin: 0;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        font-size: 15px;
+                        color: #000000;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            & .deliveredOrdersSec{
+                // border: 1px solid red;
+                margin: 40px 30px;
+                padding: 20px;
+    
+                & .deliverySection{
+                    display: grid;
+                    grid-template-columns: 1fr 9fr 3fr;
+                    margin-top: 20px;
+    
+                    & > img{
+                        width: 30px;
+                        height: 30px;
+                    }
+    
+                    & .dateAndTimeSection{
+                        & > p:first-child{
+                            margin: 0;
+                            font-size: 15px;
+                            font-weight: bold;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                        }
+                        & > p:nth-child(2){
+                            margin-top: 10px;
+                            font-size: 13px;
+                            font-weight: 500;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                            color: rgb(117,117,117);
+                            letter-spacing: 1px;
+                        }
+                        & > p:nth-child(3){
+                            margin-top: 15px;
+                            font-size: 15px;
+                            font-weight: bold;
+                            opacity: 1;
+                            word-spacing: nowrap;
+                            color: rgb(78,173,60);
+                        }
+                    }
+        
+                    & > p{
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: bold;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        text-align: right;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .userContentMyOrder{
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+        & > p{
+            margin: 10px 5px;
+        }
+
+       & .myOrderMainContainer{
+        //   border: 1px solid blue;
+
+            & .myOrderContainer{
+                padding: 2px;
+             
+                & .myOrdersSection{
+                    padding: 10px;
+                    grid-template-columns: repeat(2, 6fr);
+                }
+
+                & .paymentModeSec{
+                    .totalSec{
+                        margin-left: 50px;
+                    }
+                    .productDiscountSec{
+                        margin-left: 50px;
+                    }
+                    .deliveryChargesSec{
+                        margin-left: 50px;
+                    }
+                    .otherChargesSec{
+                        margin-left: 50px;
+                    }
+                    .totalPayableSec{
+                        margin-left: 50px;
+                    }
+                }
+
+                & .deliveredOrdersSec{
+                    margin: 20px;
+                }
+            }          
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .userContentMyOrder{
+        margin: 2px;
+        & .myOrderMainContainer{
+            & .myOrderContainer{
+                & .orderIdSection{
+                    padding: 10px;
+                    grid-template-columns: 2fr 8fr 2fr;
+                }
+
+                & .myOrdersSection{
+                    display: flex;
+                    flex-direction: column;
+
+                    & .imageAndProduct{
+                        & .left{
+                            & > img{
+                                height: 60px;
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+
+                & .myOrdersEmail{
+                    margin: 0;
+                    padding: 10px;
+                    grid-template-columns: 2fr 10fr;
+                }
+
+                & .myOrderAddress{
+                    margin: 0;
+                    padding: 20px 10px;
+                    grid-template-columns: 2fr 10fr;
+                }
+
+                & .paymentModeSec{
+                    margin: 0;
+                    padding: 10px;
+
+                    & .paymentModeOnline{
+                        grid-template-columns: 2fr 10fr;
+                    }
+
+                    & .totalSec{
+                        margin-left: 50px;
+                    }
+
+                    & .productDiscountSec{
+                        margin-left: 50px;
+                    }
+
+                    & .deliveryChargesSec{
+                        margin-left: 50px;
+                    }
+
+                    & .otherChargesSec{
+                        margin-left: 50px;
+                    }
+
+                    & .totalPayableSec{
+                        margin-left: 50px;
+                    }
+                }
+
+                & .deliveredOrdersSec{
+                    margin: 0;
+                    padding: 20px 10px;
+
+                    & .deliverySection{
+                        grid-template-columns: 2fr 8fr 2fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// @media (max-width: 991px){
+//     .userContentMyOrder{
+//         display: flex;
+//         flex-direction: column;
+//         margin: 20px;
+//         width: 100%;
+//         height: auto;
+
+//         .myOrderMainContainer{
+//             border: 1px solid red;
+//             width: 100%;
+//             height: auto;
+//             margin: 0;
+//             transform: none;
+
+//             .myOrderContainer{
+//                 border: 1px solid red;
+//                 padding: 2px;
+//                 margin: 0;
+                
+//                 .myOrdersSection{
+//                     padding: 10px;
+//                     grid-template-columns: repeat(2, 6fr);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+// @media (max-width: 767px){
+    
+//         .myOrderMainContainer{
+//             .myOrderContainer{
+//                 padding: 0px;
+//                 margin: 0;
+//                 .myOrdersSection{
+//                     display: flex;
+//                     flex-direction: column;
+//                     padding: 10px;
+//                 }
+//             }
+//         }
+//     }
+
+// @media (max-width: 991px){
+//     .userContentMyOrder{
+//         display: flex;
+//         flex-direction: column;
+//         margin: 20px;
+//         width: 100%;
+//         height: auto;
+
+//         .myOrderMainContainer{
+//             border: 1px solid red;
+//             width: 100%;
+//             height: auto;
+//             & > p{
+//                 margin: 10px 5px;
+//             }
+
+//             & .myOrderContainer{
+//                 border: 1px solid blue;
+//                 padding: 10px;
+
+//                 & .myOrdersSection{
+//                     border: 1px solid green;
+//                     padding: 15px;
+//                     grid-template-columns: repeat(2,6fr);
+//                     column-gap: 15px;
+//                 }
+
+//                 & .myOrdersEmail{
+//                     margin: 20px;
+//                     padding: 10px;
+//                 }
+
+//                 & .myOrderAddress{
+//                     margin: 20px;
+//                     padding: 10px;
+//                 }
+
+//             }
+//         }
+//     }
+// }

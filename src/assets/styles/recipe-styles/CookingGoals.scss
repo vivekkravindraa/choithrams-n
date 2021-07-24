@@ -1,0 +1,187 @@
+.cookingGoals {
+    margin: 0 80px 40px 80px;
+    border-radius: 22px;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+    & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 22px;
+        padding: 25px 0 15px 0;
+
+        & > p:first-child {
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: "ApercuRegular", sans-serif;
+            font-style: italic;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        & > p:last-child {
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;   
+        }
+    }
+
+    & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px 0;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 50%;
+                background: #ff4e00;
+
+                & > img {
+                    height: 32px;
+                }
+            }
+
+            & > p {
+                text-align: center;
+                font-weight: 600;
+                font-size: 10px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+
+    & > div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0 25px 0;
+
+        & > button:first-child {
+            width: 15%;
+            border: 2px solid #ffffff;
+            border-radius: 22px;
+            outline: 0;
+            background: transparent;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0 5px 0 0;
+        }
+
+        & > button:last-child {
+            width: 15%;
+            border: 2px solid #ffffff;
+            border-radius: 22px;
+            outline: 0;
+            background: transparent;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0 0 0 5px;
+        }
+
+        & > button:hover {
+            border: 2px solid #ff4e00;
+            background: #ff4e00;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .cookingGoals {
+        margin: 0 25px 25px 25px;
+
+        & > div:nth-child(2) {
+            & > div {
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 75px;
+                    width: 75px;
+                    border-radius: 50%;
+                    background: #ff4e00;
+    
+                    & > img {
+                        height: 32px;
+                    }
+                }
+            }
+        }
+
+        & > div:last-child {
+            & > button:first-child,
+            & > button:last-child {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .cookingGoals {
+        margin: 10px;
+
+        & > div:nth-child(2) {
+            & > div {
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background: #ff4e00;
+    
+                    & > img {
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        & > div:last-child {
+            & > button:first-child,
+            & > button:last-child {
+                width: 45%;
+            }
+        }
+    }
+}

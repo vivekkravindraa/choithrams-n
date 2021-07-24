@@ -1,0 +1,438 @@
+
+
+/* all footer related scss styles goes in this file.. */
+.footerContainer {
+    background: #41983E;
+    margin: 310px 10px 0 10px;
+    border-radius: 22px 22px 0 0;
+    & .footerTop {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin: 0 80px;
+        background: #F5F5F5;
+        position: relative;
+        top: -150px;
+        border-top: 4px solid #FFA500;
+        border-radius: 0 0 22px 22px;
+        & > div:first-child {
+            padding: 25px;
+            & > div:first-child {
+                & > p {
+                    font-weight: 600;
+                    font-size: 22px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+            & > div:nth-child(2) {
+                & > p:first-child {
+                    font-weight: 600;
+                    font-size: 11px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+                & > p:last-child {
+                    font-weight: 600;
+                    font-size: 11px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #808080;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+            }
+            & > div:last-child {
+                display: flex;
+                margin: 25px 0 0 0;
+                & > div:first-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 25px;
+                    border-radius: 50px;
+                    background: #343434;
+                    margin: 0 10px 0 0;
+                    width: -webkit-fill-available;
+                    & > img {
+                        height: 32px;
+                    }
+                    & > p {
+                        white-space: nowrap;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0 0 0 4px;
+                    }
+                }
+                & > div:last-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 25px;
+                    border-radius: 50px;
+                    background: #FFFFFF;
+                    width: -webkit-fill-available;
+                    & > img {
+                        height: 32px;
+                    }
+                    & > p {
+                        white-space: nowrap;
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #000000;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+        }
+        & > div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            & > img {
+                position: absolute;
+                bottom: -35px;
+                height: 335px;
+            }
+        }
+    }
+    & .footerBottom {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        margin: 0 80px;
+        padding: 0 0 75px 0;
+        position: relative;
+        top: -25px;
+        & > div:first-child {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #FFFFFF;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 35px 0;
+            }
+
+            & > a{
+                text-decoration: none;
+                color: #FFFFFF;
+                
+                & > p:first-child {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+        & > div:nth-child(2) {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #FFFFFF;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 35px 0;
+            }
+            & > a{
+                text-decoration: none;
+                color: #FFFFFF;
+                
+                & > p:first-child {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+        & > div:nth-child(3) {
+            & > p {
+                font-weight: 500;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #FFFFFF;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 35px 0;
+            }
+            & > a{
+                text-decoration: none;
+                color: #FFFFFF;
+                
+                & > p:first-child {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+        & > div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & > p:first-child {
+                font-weight: 600;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #FFFFFF;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 0 25px 0;
+            }
+            & > div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                margin: 0 0 8px 0;
+                & > img {
+                    height: 32px;
+                    margin-right: 8px;
+                }
+                & > div:last-child {
+                    display: flex;
+                    & > p:first-child {
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0 8px 0 0;
+                    }
+                    & > p:last-child {
+                        font-weight: 600;
+                        font-size: 12px;
+                        font-family: "ApercuRegular", sans-serif;
+                        color: #FFFFFF;
+                        opacity: 1;
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                }
+            }
+            & > div:nth-child(3) {
+                display: flex;
+                align-items: center;
+                margin: 0 0 16px 0;
+                & > img {
+                    height: 32px;
+                    margin-right: 8px;
+                }
+                & > div:last-child {
+                    & > div:first-child {
+                        display: flex;
+                        & > p:first-child {
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #FFFFFF;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0 8px 0 0;
+                        }
+                        & > p:last-child {
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #FFFFFF;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+                    & > div:last-child {
+                        & > p {
+                            font-weight: 600;
+                            font-size: 10px;
+                            font-family: "ApercuRegular", sans-serif;
+                            color: #FFFFFF;
+                            opacity: 1;
+                            line-height: 1.6;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            & > div:nth-child(4) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 16px 0;
+                & > div {
+                    & > img {
+                        height: 32px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+            & > div:nth-child(5) {
+                & > p {
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #FFFFFF;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+                & > div:nth-child(2) {
+                    display: grid;
+                    grid-template-columns: 1.5fr 1.5fr;
+                    place-items: center;
+                    margin: 0 0 8px 0;
+                    & > div:first-child {                        
+                        & > img {
+                            height: 32px;
+                            margin-right: 4px;
+                        }
+                    }
+                    & > div:last-child {                        
+                        & > img {
+                            height: 32px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+                & > p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #FFFFFF;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0 0 8px 0;
+                }
+            }
+            & > div:last-child {
+                display: flex;
+                & > input {
+                    width: -webkit-fill-available;
+                    border: none;
+                    outline: 0;
+                    padding: 10px;
+                    background: #41983E;
+                    border-bottom: 2px solid #90EE90;
+                }
+                & > input::placeholder {
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #FFFFFF;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+                & > button {
+                    border: none;
+                    outline: 0;
+                    white-space: nowrap;
+                    background: #90EE90;
+                    font-weight: 600;
+                    font-size: 10px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0; 
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 1024px) {
+    .footerContainer {
+        .footerTop {
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: 1;
+                & > img {
+                    position: absolute;
+                    height: 310px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 992px) {
+    .footerContainer {
+        position: relative;
+        top: 50px;
+        & .footerTop {
+            & > div:first-child {
+                padding: 10px;
+                & > div {
+                    & > p {
+                        text-align: center
+                    }
+                }
+            }
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: 1;
+                & > img {
+                    position: absolute;
+                    bottom: -185px;
+                    height: 310px;
+                }
+            }
+        }
+        & .footerBottom {
+            display: flex;
+            flex-direction: column;
+            & > div:first-child,
+            & > div:nth-child(2),
+            & > div:nth-child(3),
+            & > div:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+                & > p:first-child {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: center;
+                    & > img {
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    .footerContainer {
+        & .footerTop {
+            & > div:first-child {
+                & > div:last-child {
+                    flex-direction: column;
+                    & > div:first-child {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

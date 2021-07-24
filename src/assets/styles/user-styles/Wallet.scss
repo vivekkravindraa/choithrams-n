@@ -1,0 +1,281 @@
+.userContentWallet{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    margin: 40px;
+    column-gap: 25px;
+
+    .walletMainContainer{
+    
+        & > p{
+            font-size: 17px;
+            font-weight: 600;
+            opacity: 1;
+            word-spacing: nowrap;
+            letter-spacing: 0px;
+            margin: 15px 10px;
+    
+        }
+        .walletContainer{
+            margin: 25px 10px;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255,255,255);
+            box-shadow: 1px 2px 2px 2px #dedede;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 2px rgb(173,173,173);
+            // border: 1px solid red;
+            padding: 50px 10px;
+            justify-content: center;
+        
+            & .imageAndTitle{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+        
+                & > img{
+                    width: 60px;
+                    height: 60px;
+                    // background-color: rgb(78,173,60);
+                    // border-radius : 50px;
+                    // padding: 1px;
+                }
+        
+                & > p{
+                    font-size: 17px;
+                    font-weight: 600;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 2px;
+                    padding: 10px 0px;
+                }
+            }
+        
+            & .borderSec{
+                border-bottom: 1px solid #dedede;
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            & > p{
+                font-size: 13px;
+                font-weight: 400;
+                opacity: 1;
+                word-spacing: nowrap;
+                letter-spacing: 2px;
+                color: rgb(78,173,60);
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            & .currencyAndPrice{
+                display :  flex;
+                align-items: flex-start;
+                justify-content: center;
+                position: relative;
+                margin: 0;
+                padding: 0;
+        
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0;
+                }
+        
+                & > p:last-child{
+                    font-size: 27px;
+                    font-weight: bold;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 0
+                }
+            }
+        
+            & .borderSec{
+                // border-bottom: 1px solid red;
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+            }
+        
+            & .rechargeWallet{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin-bottom: 15px;
+        
+                & > img{
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 10px;
+                    border: 1px solid orange;
+                    padding: 2px;
+                    border-radius: 3px;
+                }
+        
+                & > p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 0;
+                    color : rgb(231,170,0);
+                }
+            }
+        
+            & .refundSection{
+                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(3,4fr);
+                justify-content: center;
+                border: 1px solid rgb(231,170,0);
+                border-radius: 5px;
+                background-color: 1px solid rgb(232,126,0);
+                background-image: linear-gradient(-90deg, rgb(232,126,0), rgb(231,170,0));
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+        
+                & .refund{
+                    text-align: center;
+                    padding: 25px 0;
+        
+                    & > p:first-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+                        border-right: 1px solid #ffffff;
+                        padding-bottom: 15px;
+        
+                    }
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+                        border-right: 1px solid #ffffff;
+        
+                    }
+                }
+        
+                & .cashback{
+                    text-align: center;
+        
+                    & > p:first-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+                        border-right: 1px solid #ffffff;
+                        padding-bottom: 15px;
+        
+                    }
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+                        border-right: 1px solid #ffffff;
+        
+                    }
+                }
+        
+                & .bonus{
+                    text-align: center;
+                    & > p:first-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+                        padding-bottom: 15px;
+        
+                    }
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 500;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        letter-spacing: 0;
+                        color : #ffffff;
+                        margin: 0;
+        
+                    }
+                }
+            }
+        
+            & .viewAll{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin: 50px 0;
+        
+                & > p{
+                    font-size: 15px;
+                    font-weight: 500;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 0;
+                    color: rgb(78,173,60)
+        
+                }
+        
+                & > img{
+                    width : 18px;
+                    height : 18px;
+                    margin-left: 20px;
+                }
+        
+            }
+        
+        
+        
+        
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .userContentWallet{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+        & .walletMainContainer{
+            & > p{
+                margin: 10px 5px;
+            }
+
+            & .walletContainer{
+                margin: 20px 5px;
+                padding: 20px 5px;
+
+                & .refundSection{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

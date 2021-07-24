@@ -1,0 +1,108 @@
+.essentialBannerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    background: #8dc6ee;
+
+    & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+
+        & > p:first-child {
+            text-align: center;
+            font-weight: 600;
+            font-size: 42px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #000000;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        & > p:nth-child(2) {
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #024779;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 25px 0;
+        }
+
+        & > button {
+            width: 50%;
+            outline: 0;
+            border: none;
+            background: #024779;
+            border-radius: 22px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 100px 0 0 0;
+        }
+    }
+
+    & > div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & > img {
+            height: 450px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .essentialBannerContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px;
+
+        & > div:first-child {
+            padding: 50px;
+        }
+
+        & > div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & > img {
+                height: 410px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .essentialBannerContainer {
+        padding: 25px;
+
+        & > div:first-child {
+            & > p:first-child {
+                font-size: 32px;
+            }
+            
+            & > button:last-child {
+                width: -webkit-fill-available;
+                white-space: nowrap;
+                margin: 25px 0 0 0;
+            }
+        }
+
+        & > div:last-child {
+            & > img {
+                height: 225px;
+            }
+        }
+    }
+}

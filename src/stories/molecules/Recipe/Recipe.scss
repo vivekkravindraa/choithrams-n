@@ -1,0 +1,176 @@
+.choithrams-recipe {
+    max-width: 350px;
+    position: relative;
+
+    & > div:first-child {
+        position: relative;
+
+        & > img:first-child {
+            height: 180px;
+            width: 100%;
+        }
+
+        & .absoluteCalendar {
+            position: absolute;
+            top: 0;
+            background: #F4D03F;
+            left: 25px;
+            width: 60px;
+            height: 60px;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 20px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #000000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0 8px;
+            }
+
+            & > p:last-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #000000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0 8px;
+            }
+        }
+
+        & > img:nth-child(3) {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 24px;
+        }
+
+        & > img:last-child {
+            position: absolute;
+            top: 45px;
+            right: 10px;
+            height: 24px;
+        }
+    }
+
+    & > div:last-child {
+        background: #ffffff;
+        position: relative;
+        top: -25px;
+        margin: 0 15px;
+        padding: 10px 0;
+
+        & > p:first-child {
+            text-align: center;
+            font-weight: 600;
+            font-size: 10px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffa500;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        & > p:nth-child(2) {
+            padding: 0 60px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #000000;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        & > p:nth-child(3) {
+            padding: 0 40px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #808080;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        & > button:nth-child(4) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 10px;
+            outline: 0;
+            border: #ffa500;
+            background: #ffa500;
+            color: #ffffff;
+            border-radius: 22px;
+        }
+
+        & > div:last-child {
+            display: grid;
+            grid-template-columns: repeat(3, 4fr);
+            padding: 10px;
+
+            & > div:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > img {
+                    height: 16px;
+                }
+            }
+
+            & > div:nth-child(2) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > img {
+                    height: 16px;
+                    margin-right: 8px;
+                }
+
+                & > p {
+                    text-align: left;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+            }
+
+            & > div:last-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > img {
+                    height: 16px;
+                    margin-right: 8px;
+                }
+
+                & > p {
+                    text-align: left;
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: "ApercuRegular", sans-serif;
+                    color: #000000;
+                    opacity: 1;
+                    line-height: 1.6;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.shopByBrandContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    position: relative;
+
+    & .shopByBrandHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #d3d3d3;
+        margin: 0 0 40px 0;
+
+        & > div:first-child {
+            position: relative;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #000000;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+
+        & > div:hover::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 34%;
+            border-bottom: 2px solid #000000;
+        }
+
+        & > div:last-child {
+            display: flex;
+            align-items: center;
+
+            & > p {
+                text-align: left;
+                font-weight: 600;
+                font-size: 12px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #808080;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0 8px 0 0;
+            }
+
+            & > img {
+                height: 10px;
+            }
+        }
+    }
+
+    & .shopByBrandItems::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .shopByBrandItems {
+        display: grid;
+        grid-template-columns: repeat(1000, 256px);
+        grid-auto-flow: column;
+        grid-gap: 25px;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        & > div {
+            height: 210px;
+            background-color: #ffffff;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+
+            & > p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-weight: 600;
+                font-size: 18px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+                position: relative;
+                top: 192px;
+            }
+        }
+    }
+
+    & .shopByBrandArrowLeft {
+        position: absolute;
+        left: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+
+    & .shopByBrandArrowRight {
+        position: absolute;
+        right: 60px;
+        top: 54%;
+
+        & > img {
+            height: 40px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .shopByBrandContainer {
+        padding: 25px;
+
+        & .shopByBrandItems {
+            grid-template-columns: repeat(1000, 256px);
+
+            & > div {
+                height: 210px;
+            }
+        }
+
+        & .shopByBrandArrowLeft {
+            left: 4px;
+
+            & > img {
+                height: 32px;
+            }
+        }
+    
+        & .shopByBrandArrowRight {
+            right: 4px;
+
+            & > img {
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .shopByBrandContainer {
+        padding: 10px;
+
+        & .shopByBrandItems {
+            grid-template-columns: repeat(1000, 256px);
+
+            & > div {
+                height: 210px;
+            }
+        }
+
+        & .shopByBrandArrowLeft {
+            left: 4px;
+        }
+    
+        & .shopByBrandArrowRight {
+            right: 4px;
+        }
+    }
+}

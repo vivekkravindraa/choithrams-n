@@ -1,0 +1,437 @@
+@media (min-width: 1025px) and (max-width: 4000px){
+    .otpMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .otpContainer{
+            // padding: 5px 10px;
+            padding: 10px 0px;
+            width: 25%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+        
+            .otpExit{
+                top: 10px;
+                position: absolute;
+                right: 15px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .otpLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 7px 0;
+            
+        
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    letter-spacing: 0.5px;
+                }
+            }
+        
+            .otpInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+        
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid green;
+                    padding: 3px 0;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+        
+                }
+            }
+        
+            & .verifyButton{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        
+        
+                & > button{
+                    border-radius: 20px;
+                    padding: 8px 15px ;
+                    width: 80%;
+                    border: 1px solid rgb(78, 173, 60);
+                    background-color: rgb(78, 173, 60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .otpMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .otpContainer{
+            // padding: 5px 10px;
+            padding: 5px 0px;
+            width: 38%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+        
+            .otpExit{
+                top: 8px;
+                position: absolute;
+                right: 15px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .otpLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 7px 0;
+            
+        
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            .otpInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+        
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid green;
+                    padding: 3px 0;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+        
+                }
+            }
+        
+            & .verifyButton{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        
+        
+                & > button{
+                    border-radius: 20px;
+                    padding: 8px 15px ;
+                    width: 80%;
+                    border: 1px solid rgb(78, 173, 60);
+                    background-color: rgb(78, 173, 60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 991px){
+    .otpMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .otpContainer{
+            // padding: 5px 10px;
+            padding: 5px 0px;
+            width: 50%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+        
+            .otpExit{
+                top: 8px;
+                position: absolute;
+                right: 15px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .otpLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 7px 0;
+            
+        
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            .otpInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+        
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid green;
+                    padding: 3px 0;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+        
+                }
+            }
+        
+            & .verifyButton{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        
+        
+                & > button{
+                    border-radius: 20px;
+                    padding: 8px 15px ;
+                    width: 80%;
+                    border: 1px solid rgb(78, 173, 60);
+                    background-color: rgb(78, 173, 60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+ 
+@media (max-width: 767px){
+    .otpMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .otpContainer{
+            // padding: 5px 10px;
+            padding: 5px 0px;
+            width: 90%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+        
+            .otpExit{
+                top: 8px;
+                position: absolute;
+                right: 15px;
+        
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        
+            .otpLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 7px 0;
+            
+        
+                & > p:first-child{
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+        
+                & > p:last-child{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+        
+            .otpInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+        
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid green;
+                    padding: 3px 0;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+        
+                }
+            }
+        
+            & .verifyButton{
+                margin-top: 20px;
+                margin-bottom: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        
+        
+                & > button{
+                    border-radius: 20px;
+                    padding: 8px 15px ;
+                    width: 80%;
+                    border: 1px solid rgb(78, 173, 60);
+                    background-color: rgb(78, 173, 60);
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

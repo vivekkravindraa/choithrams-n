@@ -1,0 +1,200 @@
+.foodStyleDelivery {
+    margin: 0 80px 40px 80px;
+    border-radius: 22px;
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+
+    & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 22px;
+        padding: 25px 0 15px 0;
+
+        & > p:first-child {
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: "ApercuRegular", sans-serif;
+            font-style: italic;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        & > p:last-child {
+            text-align: left;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0;   
+        }
+    }
+
+    & > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+
+        & > div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & > img {
+                height: 54px;
+            }
+
+            & > p {
+                text-align: center;
+                font-weight: 600;
+                font-size: 10px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+
+        & > div:nth-child(2) {
+            position: relative;
+            top: 15px;
+
+            & > p:first-child {
+                text-align: left;
+                font-weight: 600;
+                font-size: 18px;
+                font-family: "ApercuRegular", sans-serif;
+                font-style: italic;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+
+        & > div:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & > img {
+                height: 64px;
+            }
+
+            & > p {
+                text-align: center;
+                font-weight: 600;
+                font-size: 10px;
+                font-family: "ApercuRegular", sans-serif;
+                color: #ffffff;
+                opacity: 1;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+    }
+
+    & > div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0 25px 0;
+
+        & > button:first-child {
+            width: 15%;
+            border: 2px solid #ffffff;
+            border-radius: 22px;
+            outline: 0;
+            background: transparent;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0 5px 0 0;
+        }
+
+        & > button:last-child {
+            width: 15%;
+            border: 2px solid #ffffff;
+            border-radius: 22px;
+            outline: 0;
+            background: transparent;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: "ApercuRegular", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            line-height: 1.6;
+            margin: 0 0 0 5px;
+        }
+
+        & > button:hover {
+            border: 2px solid #00b712;
+            background: #00b712;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .foodStyleDelivery {
+        margin: 0 25px 40px 25px;
+
+        & > div:nth-child(2) {
+            & > div:first-child,
+            & > div:last-child {
+                & > img {
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .foodStyleDelivery {
+        margin: 0 10px 40px 10px;
+
+        & > div:nth-child(2) {
+            & > div:first-child,
+            & > div:last-child {
+                & > img {
+                    height: 38px;
+                }
+            }
+
+            & > div:nth-child(2) {
+                position: relative;
+                top: 8px;
+
+                & > p:first-child {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        & > div:last-child {
+            & > button:first-child,
+            & > button:last-child {
+                width: 45%;
+            }
+        }
+    }
+}

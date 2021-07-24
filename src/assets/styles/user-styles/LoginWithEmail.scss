@@ -1,0 +1,641 @@
+/* all login related scss styles goes in this file.. */
+@media (min-width: 1025px) and (max-width: 4000px){
+    .loginWithEmailMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loginWithEmailContainer{
+            padding: 5px 0px;
+            width: 25%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+            
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+
+                & > p:last-child{
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+
+            & .loginInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid rgb(78,173,60);
+                    padding: 3px 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+                }
+            }
+
+            & .termsOrService{
+                margin-top: 20px;
+                text-align: left;
+                // align-items: center;
+                // justify-content: center;
+                padding: 0 20px;
+
+                & > p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                    line-height: 2;
+
+                    & > span{
+                        color: #000000;
+                    }
+
+                }
+            }
+
+            & .continueButton{
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                & > button{
+                    border-radius: 20px;
+                    padding: 10px 10px ;
+                    width: 100%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 13px;
+                }
+            }
+
+            & .borderSection{
+                margin-top: 20px;
+                border-bottom: 1px solid rgb(201,201,201);
+            }
+
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: Roboto, sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117)
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .loginWithEmailMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loginWithEmailContainer{
+            padding: 5px 0px;
+            width: 35%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top: 10px;
+
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+            
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+
+            & .loginInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid rgb(78,173,60);
+                    padding: 3px 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+                }
+            }
+
+            & .termsOrService{
+                margin-top: 20px;
+                text-align: left;
+                // align-items: center;
+                // justify-content: center;
+                padding: 0 20px;
+
+                & > p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                    line-height: 2;
+
+                    & > span{
+                        color: #000000;
+                    }
+                }
+            }
+
+            & .continueButton{
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                & > button{
+                    border-radius: 20px;
+                    padding: 7px 10px ;
+                    width: 100%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+            }
+
+            & .borderSection{
+                margin-top: 30px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: Roboto, sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117)
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+                    }
+                }
+            }
+        }
+    } 
+
+}
+
+// responsive tab
+@media (max-width: 991px){
+    .loginWithEmailMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .loginWithEmailContainer{
+            padding: 5px 0px;
+            width: 43%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top: 10px;
+
+                & > img{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+            
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+
+            & .loginInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid rgb(78,173,60);
+                    padding: 3px 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+                }
+            }
+
+            & .termsOrService{
+                margin-top: 20px;
+                text-align: left;
+                // align-items: center;
+                // justify-content: center;
+                padding: 0 20px;
+
+                & > p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+                    line-height: 2;
+
+                    & > span{
+                        color: #000000;
+                    }
+                }
+            }
+
+            & .continueButton{
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                & > button{
+                    border-radius: 20px;
+                    padding: 7px 10px ;
+                    width: 100%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+            }
+
+            & .borderSection{
+                margin-top: 30px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: Roboto, sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117)
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+// responsive mobile
+@media (max-width: 767px){
+    .loginWithEmailMainContainer{
+        height: 100vh;
+        width: 100vw;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .loginWithEmailContainer{
+            padding: 5px 0px;
+            width: 80%;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background: #ffffff;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 2px rgb(246,246,246);
+            transform: none;
+
+            .loginExit{
+                position: absolute;
+                right: 15px;
+                top: 10px;
+
+                & > img{
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+
+            .loginLabel{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px 0;
+            
+                & > p:first-child{
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+
+                & > p:last-child{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                }
+            }
+
+            & .loginInputs{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 10px 0;
+
+                & > input{
+                    text-align: center;
+                    border: none;
+                    border-bottom: 1px solid rgb(78,173,60);
+                    padding: 3px 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    margin: 10px 0;
+                }
+            }
+
+            & .termsOrService{
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+                line-height: 2;
+
+                & > p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    font-family: sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117);
+
+                    & > span{
+                        color: #000000;
+                    }
+                }
+            }
+
+            & .continueButton{
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                & > button{
+                    border-radius: 20px;
+                    padding: 7px 10px ;
+                    width: 100%;
+                    border: 1px solid rgb(78,173,60);
+                    background-color: rgb(78,173,60);
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+            }
+
+            & .borderSection{
+                margin-top: 30px;
+                border-bottom: 0.1px solid rgb(201,201,201);
+            }
+
+            & .newToChoithrams{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+
+                & > p:first-child{
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: Roboto, sans-serif;
+                    opacity: 1;
+                    word-spacing: nowrap;
+                    color: rgb(117,117,117)
+                }
+
+                & > a{
+                    text-decoration: none;
+
+                    & > p:last-child{
+                        font-size: 15px;
+                        font-weight: 600;
+                        font-family: Roboto, sans-serif;
+                        opacity: 1;
+                        word-spacing: nowrap;
+                        color: rgb(78,173,60);
+                    }
+                }
+            }
+        }
+    }    
+}

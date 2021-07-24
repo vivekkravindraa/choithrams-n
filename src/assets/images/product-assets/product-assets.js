@@ -1,0 +1,1 @@
+// all product component assets goes in this folder..
